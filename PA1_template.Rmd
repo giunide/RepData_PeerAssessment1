@@ -2,8 +2,8 @@
 title: 'Reproducible Research: Peer Assessment 1'
 output:
   html_document:
+    fig_caption: yes
     keep_md: yes
-  word_document: default
 ---
 
 
@@ -91,4 +91,5 @@ library(dplyr)
 wdmean <- activity.new %>% group_by(interval,wd) %>% summarise(avg = mean(steps))
 qplot(interval, avg,data = wdmean, geom = "line", facets = wd~., xlab = "Interval", ylab = "Average Number of Steps", color =I("blue"))
 ```
+
 There seems to be  difference between the average number of steps registered during weekdays and weekends.

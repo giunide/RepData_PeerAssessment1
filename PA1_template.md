@@ -2,8 +2,8 @@
 title: 'Reproducible Research: Peer Assessment 1'
 output:
   html_document:
+    fig_caption: yes
     keep_md: yes
-  word_document: default
 ---
 
 
@@ -159,4 +159,5 @@ qplot(interval, avg,data = wdmean, geom = "line", facets = wd~., xlab = "Interva
 ```
 
 ![](PA1_template_files/figure-html/unnamed-chunk-10-1.png)<!-- -->
+
 There seems to be  difference between the average number of steps registered during weekdays and weekends.
